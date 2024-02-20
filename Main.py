@@ -1,3 +1,5 @@
+
+#    import section    #
 import dash
 from dash import html, dcc, Input, Output, State
 import plotly.graph_objects as go
@@ -168,6 +170,8 @@ while True:
      State('add-scheme-dropdown', 'value'),
      State('heatmap', 'figure')]
 )
+
+
 def update_graph(add_clicks, remove_clicks, scheme_to_remove, scheme_to_add, current_figure):
     global selected_schemes, data, text_data
 
